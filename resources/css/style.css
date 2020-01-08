@@ -1,0 +1,558 @@
+/*------------------------------------------------*/
+/* BASIC SETUP */
+/*------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+/*------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/*------------------------------------------------*/
+/* HEADER */
+/*------------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)  , rgba(0, 0, 0, 0.8)), url(img/close-up-of-vintage-camera-on-white-background-326316.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 67%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/* --- HEADINGS ---*/
+
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color:rgb(104, 103, 103);
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* --- PARAGRAPHS ---*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 95%;
+    line-height: 145%;
+}
+
+p {
+    color: rgb(133, 128, 128);
+}
+
+/* Main nav */
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid rgb(104, 103, 103);
+}
+
+/* --- ICONS ---*/
+
+img {
+    width: 50px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: rgb(104, 103, 103);
+    font-size: 120%;
+    margin-right: 10px;
+
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* --- BUTTONS ---*/
+
+a:link,
+a:visited {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid rgb(37, 37, 37);
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: rgb(7, 2, 2);
+    border-bottom: 1px solid transparent;
+}
+
+/*------------------------------------------------*/
+/* FEATURES */
+/*------------------------------------------------*/
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+/*------------------------------------------------*/
+/* TESTIMONUALS */
+/*------------------------------------------------*/
+
+.section-testimonials {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/bl.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    
+}
+
+blockquote {
+    font-size: 30px;
+}
+
+/*------------------------------------------------*/
+/* PRICE */
+/*------------------------------------------------*/
+#content {
+	padding: 5px;
+	width: 1024px;
+	margin: 5px auto;
+	text-align: center;
+}
+
+#content > h1 {
+	color: rgb(37, 37, 37);
+	font-family: 'Raleway', sans-serif;
+	font-size: 45px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+#content p {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+}
+
+#container {
+	width: 1024px;
+	height: auto;
+	background-color: #141414;
+	border: 5px solid #F7B32B;
+	overflow: hidden;
+	padding: 50px;
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto; 
+}
+
+#container h1 {
+	font-size: 25px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 1.2px;
+	line-height: 35px;
+}
+
+#container .thin {
+	font-size: 25px;
+	font-weight: 100;
+	color: #f7b32b;
+}
+
+#container p {
+	font-size: 16px;
+	color: #fff;
+	font-weight: 100;
+	margin-bottom: 25px;
+}
+
+#container #cols {
+	width: calc(33.33% - 16px);
+	float: left;
+	margin: 0 8px;
+	overflow: hidden;
+}
+
+#container #cols:nth-child(4) ul li {
+	/*border-left: 1px solid #F7B32B;*/
+	border-right: 1px solid #F7B32B;
+}
+
+#container #cols .price {
+	height: 120px;
+	text-align: center;
+}
+
+#container #cols .price h2 {
+	font-size: 65px;
+	color: #f7b32b;
+	margin-bottom: 10px;
+}
+
+
+#container #cols .price .dollorSign {
+	font-size: 35px;
+	font-weight: 100;
+}
+
+#container #cols .price h5 {
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #f7b32b;
+}
+
+#container .options ul li {
+	list-style-type: none;
+	padding: 10px 10px; 
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+
+#container #cols:nth-child(3) .options ul li {
+	text-align: right;
+}
+
+#container #cols .time {
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+
+#container #cols:nth-child(3) .time {
+	text-align: right;
+	padding-right: 10px;
+	line-height: 25px;
+}
+
+
+
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: right;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-right: 120px;
+    line-height: 25px;
+}
+
+
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0.5px;
+    left: 65%;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #f7b32b;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #141414;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #141414;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 4px;
+	left: 4px;
+	width: 10.5px;
+	height: 10.5px;
+	border-radius: 50%;
+	background: #f7b32b;
+}
+
+
+#container .options .btn {
+	margin-top: 15px;
+}
+
+#container .options .btn a {
+	width: 150px;
+	height: 50px;
+	text-decoration: none;
+	cursor: pointer;
+	border: 1px solid #F7B32B;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 auto;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	    -ms-transition: all .25s;
+	     -o-transition: all .25s;
+	        transition: all .25s;
+}
+
+#container .options .btn a:hover {
+	background-color: #F7B32B;
+}
+
+/*------------------------------------------------*/
+/* PROJECT */
+/*------------------------------------------------*/
+
+
+.section-project {
+    padding: 0;
+}
+
+.project-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.project-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.project-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.project-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.project-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+}
+
+/*------------------------------------------------*/
+/* CONTACT */
+/*------------------------------------------------*/
+
+textarea {
+    margin-left: 14px;
+}
+
+.btn-ghost {
+    margin-left: 14px;
+}
+
+/*------------------------------------------------*/
+/* FOOTER */
+/*------------------------------------------------*/
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style : none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.facebook,
+.twitter,
+.googleplus,
+.instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #00aced;
+}
+
+.googleplus:hover {
+    color: #dd4b39;
+}
+
+.instagram:hover {
+    color: #517fa4;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}

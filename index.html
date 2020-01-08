@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css/animate.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resources/css/all.css">
+    <title>Photography</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="row">
+                <ul class="main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Try it</a></li>
+                    <li><a href="#price">Price</a></li>
+                    <li><a href="#project">Our projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1>I don’t trust words. I trust pictures.</h1>
+        </div>
+    </header>
+
+    <section class="section-about" id="about">
+        <div class="row">
+            <h2>The future of photography</h2>
+            <p class="long-copy">
+                Cutting-edge photography tools so you can easily edit, organize, store, and share from anywhere.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3 box">
+                <img src="resources/img/lglogo.png" alt="lroom">
+                <h3>Adobe Lightroom</h3>
+                <p>Adobe is truly the gold-standard when it comes to image editing software. If Photoshop comes off as
+                    too complex and cumbersome, then you’re sure to love all the incredible effects you can accomplish
+                    with <a href="https://www.adobe.com/sea/products/photoshop-lightroom.html?promoid=RL89NGLD&mv=other"
+                        target="_blank">Adobe Lightroom</a>.
+                </p>
+            </div>
+            <div class="col span-1-of-3 box">
+                <img src="resources/img/phlogopng.png" alt="pshop">
+                <h3>Adobe Photoshop</h3>
+                <p>It’s hard to write an article about the best photo editing software for photographers without giving
+                    Adobe Photoshop a well-deserved mention. For artists, illustrators, and designers around the world,
+                    <a href="https://www.adobe.com/sea/products/photoshop.html?promoid=PC1PQQ5T&mv=other"
+                        target="_blank">Photoshop</a> is their go-to editing tool.
+                </p>
+            </div>
+            <div class="col span-1-of-3 box">
+                <img src="resources/img/ailogo.png" alt="ailogo">
+                <h3>Adobe Illustrator</h3>
+                <p>A sidebar that appears at the left of the screen with a variety of tools to select, create, and
+                    manipulate objects or artworks in <a
+                        href="https://www.adobe.com/sea/products/illustrator.html?promoid=PGRQQLFS&mv=other"
+                        target="_blank">Illustrator</a>. These tools can be selected as following: drawing,
+                    typing, painting...
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-testimonials">
+        <div class="row">
+            <div class="col md-12">
+                <blockquote>
+                    “Photography is a way of feeling, of touching, of loving. What you have caught on film is captured
+                    forever… It remembers little things, long after you have forgotten everything.”
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-price" id="price">
+        <div id="content">
+            <h1>Welcome To MultiType</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, laudantium.</p>
+            <p></p>
+        </div>
+        
+    
+        <div id="container">
+    
+            <h1><span class="thin">Compare</span> Packages</h1>
+            <p>For your first order, take $50 off of the above price</p>
+    
+    
+            <div id="cols">
+                
+                <div class="price"></div>
+                <div class="options">
+                    <ul>
+                        <li>Facebook Ad Campaign</li>
+                        <li>Listing Video</li>
+                        <li>Listing Page</li>
+                        <li>Ad Spend Included</li>
+                    </ul>
+                    <div class="time">
+                        <span>Delivery Time<br>(Business Days)</span>
+                    </div>
+                    <div class="btn">
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div id="cols">
+                
+                <div class="price">
+                    <h2><span class="dollorSign">$</span>49</h2>
+                    <h5>Full Package</h5>
+                </div>
+                <div class="options">
+                    <ul>
+                        
+                        <li><i class="fas fa-money-check-alt"></i></li>
+                        <li><i class="fas fa-check"></i></li>
+                        <li><i class="fas fa-check"></i></li>
+                        <li><b>$49</b></li>
+                    </ul>
+                    <div class="time">
+    
+                        <label class="container" for="one" id="active">
+                            <input type="radio" checked="checked" onclick="one();" name="price" value="49" id="one">
+                            <span class="checkmark"></span>
+                            <span id="active">7 days</span>
+                        </label>
+    
+                        <label class="container" for="two" id="active2">
+    
+                            <input type="radio"  onclick="two();" name="price" value="200" id="two">
+                            <span class="checkmark"></span>
+                            <span id="active2">3 days (+20)</span>
+    
+                        </label>
+    
+                    </div>
+                    <div class="btn">
+                        <div id="btn-1"><a href="low_49.html">Select <b>$49</b></a></div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div id="cols">
+                
+                <div class="price">
+                    <h2><span class="dollorSign">$</span>99</h2>
+                    <h5>Full Package</h5>
+                </div>
+                <div class="options">
+                    <ul>
+                        <li><i class="fas fa-times"></i></li>
+                        <li><i class="fas fa-check"></i></li>
+                        <li><i class="fas fa-check"></i></li>
+                        <li>N/A</li>
+                    </ul>
+                    <div class="time">
+    
+                        <label class="container" for="three" id="active3">
+                            <input type="radio" checked="checked" onclick="three();" name="price2" value="49" id="three">
+                            <span class="checkmark"></span>
+                            <span id="active3">7 days</span>
+                        </label>
+    
+                        <label class="container" for="four" id="active4">
+    
+                            <input type="radio"  onclick="four();" name="price2" value="200" id="four">
+                            <span class="checkmark"></span>
+                            <span id="active4">3 days (+20)</span>
+    
+                        </label>
+    
+                    </div>
+                    <div class="btn">
+                        <div id="btn-2"><a href="low_99.html">Select <b>$99</b></a></div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="section-project" id="project">
+        <ul class="project-showcase clearfix">
+            <li>
+                <figure class="project-photo">
+                    <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="project-photo">
+                    <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+                </figure>
+            </li>
+            <li>
+                <figure class="project-photo">
+                    <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="project-photo">
+                    <img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
+                </figure>
+            </li>
+        </ul>
+        <ul class="project-showcase clearfix">
+            <li>
+                <figure class="project-photo">
+                    <img src="resources/img/5.jpg" alt="KPaleo beef steak with vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="project-photo">
+                    <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="project-photo">
+                    <img src="resources/img/7.jpg" alt="Burger with cheddar and bacon">
+                </figure>
+            </li>
+            <li>
+                <figure class="project-photo">
+                    <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries">
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-contact">
+        <div class="row">
+            <h2>Contact us</h2>
+        </div>
+        <div class="row">
+            <div class="contact">
+                <form id="contactForm" action="https://contact-controller.bet.org.rs/email/send" method="POST">
+                    <div class="row">
+                        <div class="col span-1-of-3 box">
+                            <input type="text" id="name" name="name" placeholder="Ime i Prezime" />
+                        </div>
+                        <div class="col span-1-of-3 box">
+                            <input type="text" id="subject" name="subject" placeholder="Naslov" />
+                        </div>
+                        <div class="col span-1-of-3 box">
+                            <input type="text" id="email" name="email" placeholder="E-mail" />
+                            <!-- Linija ispod mora da ima validan mail na koji ce stizati poruka sa sajta-->
+                            <input type="hidden" id="sendto" name="sendto" value="nemanja1997nedeljkovic@gmail.com" />
+                            <br />
+                            <input type="hidden" id="sendfrom" name="sendfrom" value="kontaktcentar@rts.rs" />
+                            <br />
+                        </div>
+                    </div>
+                    <textarea placeholder="Poruka" id="message" name="message" rows="8" cols="117"></textarea>
+                    <br />
+                    <button class="btn-ghost pull-right" type="submit">Pošalji</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-googleplus" class="googleplus"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2019 by Omnifood. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+		
+		// Functions For 49 Dollors
+
+		function one() {
+			 if (document.getElementById('one').checked === true) {
+			 	document.getElementById('btn-1').innerHTML = '<a href="low_49.html">Select <b>$49</b></a>';
+			 	document.getElementById('show').innerHTML = 
+			 	'<h4>49</h4>';
+			 }
+		}
+
+		function two() {
+			 if (document.getElementById('two').checked === true) {
+			 	document.getElementById('btn-1').innerHTML = '<a style="background-color: #F7B32B;" href="high_200.html">Select <b>$200</b></a>';
+			 	document.getElementById('show').innerHTML = 
+			 	'<h4>200</h4>';
+			 }
+		}
+
+		// Functions For 99 Dollors
+
+		function three() {
+			 if (document.getElementById('three').checked === true) {
+			 	document.getElementById('btn-2').innerHTML = '<a href="low_99.html">Select <b>$99</b></a>';
+			 	document.getElementById('show').innerHTML = 
+			 	'<h4>99</h4>';
+			 }
+		}
+
+		function four() {
+			 if (document.getElementById('four').checked === true) {
+			 	document.getElementById('btn-2').innerHTML = '<a style="background-color: #F7B32B;" href="high_119.html">Select <b>$119</b></a>';
+			 	document.getElementById('show').innerHTML = 
+			 	'<h4>119</h4>';
+			 }
+		}
+
+	</script>
+    <script>
+        var map = L.map("map", {
+            center: [44.8231517, 20.4509073],
+            zoom: 20
+        });
+        L.tileLayer(
+            "https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=e1iH39TPjuJaUGrWW6i1", {
+                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+            }
+        ).addTo(map);
+        var circle = L.circle([44.8231517, 20.4509073], {
+            color: "blue",
+            fillColor: "blue",
+            fillOpacity: 0.5,
+            radius: 18
+        }).addTo(map);
+        setInterval(function Ha() {
+            map.invalidateSize();
+        }, 100);
+    </script>
+
+    <script>
+        (function() {
+            $(document).ready(function() {
+                return $("#contact-form").submit(function(e) {
+                    var email, message, name;
+                    name = document.getElementById("inputName");
+                    email = document.getElementById("inputEmail");
+                    message = document.getElementById("inputMessage");
+                    if (!name.value || !email.value || !message.value) {
+                        alertify.error("Molimo vas proverite");
+                        return false;
+                    } else {
+                        $.ajax({
+                            method: "POST",
+                            url: "sendemail.php",
+                            data: $("#contact-form").serialize(),
+                            datatype: "json"
+                        });
+                        e.preventDefault();
+                        $(this)
+                            .get(0)
+                            .reset();
+                        return alertify.success("Poruka je poslata");
+                    }
+                });
+            });
+        }.call(this));
+    </script>
+</body>
+
+</html>
